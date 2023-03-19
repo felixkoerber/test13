@@ -6,3 +6,10 @@ parts:
   - file: overview
   - file: setup
   - file: introduction/introduction.md
+  - file: content/communcation_collaboration.ipynb
+    sections:
+    - file: Digital_Collaboration
+    - file: Digital_Storytelling
+    - file: Data_Visualization
+    - file: Science_communication
+    - file: Networks_outreach
