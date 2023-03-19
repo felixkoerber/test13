@@ -1,0 +1,733 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Communication and Collaboration &#8212; Digital Literacy in Higher Education</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Excercise: Introduction to Git and GitHub" href="excercise_to_git_and_github.html" />
+    <link rel="prev" title="Data-mangament" href="data_management.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Digital Literacy in Higher Education</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Welcome!
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Getting Started
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../overview.html">
+   Course overview &amp; procedure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../setup.html">
+   Setup: Before we get started
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../introduction/introduction.html">
+   Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../introduction/digital_literacy.html">
+     Introduction - digital literacy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../introduction/digital_literacy_practical_excercise.html">
+     Excercise: Practical implications of digital literacy:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="media_information_lieracy.html">
+   Information &amp; media literacy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project_design.html">
+   Project design in the digital age
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lit_review.html">
+   find and evaluate data sources, published research &amp; Literature review strategies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="writing.html">
+   scientific writing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="documentation.html">
+   documentation/other academic content
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="coding.html">
+   programming/coding in research/academia
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="learn_to_code.html">
+     Learn to code - the basics
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="intro_python_I.html">
+     Intro Python I
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="intro_python_nb_I.html">
+       Introduction V - Introduction to Python - I
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="intro_python_II.html">
+     Intro Python II
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="intro_python_nb_II.html">
+       Introduction VI - Introduction to Python II
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="intro_python_III.html">
+     Intro Python III
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="intro_python_nb_III.html">
+       Introduction VII - Introduction to Python III
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_management.html">
+   Data-mangament
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Communication and Collaboration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="digital_scholarship.html">
+   Digital scholarship/academic practice
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../advanced/advanced.html">
+   Advanced Applications
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="intro_to_shell.html">
+     Excercise - the (unix) command line: bash
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_numpy.html">
+     Introduction to NumPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scipy.html">
+     Introduction to SciPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scikit.html">
+     Introduction to scikit-learn &amp; scikit-image
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_visualization_for_data.html">
+     Visualization of different data types with python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../advanced/eeg_introduction.html">
+     Electroencephalography
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_introduction.html">
+       MNE python for EEG analysis
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_preprocessing.html">
+       EEG preprocessing with MNE
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_workflow_tutorial.html">
+       MNE Workflow tutorial
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../break.html">
+   Yoga and/or dance break
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dei.html">
+   Diversity, Equity and Inclusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CoC.html">
+   Code of Conduct
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/communcation_collaboration.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/M-earnest/diler_dgitial_literacy_course"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/M-earnest/diler_dgitial_literacy_course/issues/new?title=Issue%20on%20page%20%2Fcontent/communcation_collaboration.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/M-earnest/diler_dgitial_literacy_course/edit/master/lecture/content/communcation_collaboration.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/M-earnest/diler_dgitial_literacy_course/master?urlpath=tree/lecture/content/communcation_collaboration.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Communication and Collaboration
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beyond-publication-research-dissemination-communication">
+     Beyond publication: research dissemination &amp; communication
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-are-we-now">
+   Where are we now?
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#objectives">
+     Objectives 📍
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#roadmap">
+   Roadmap
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Where are we now?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#homework-excercises-and-ressources">
+     Homework, Excercises and ressources
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-materials">
+     Additional materials
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tldr">
+   TlDR
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Communication and Collaboration</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Communication and Collaboration
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beyond-publication-research-dissemination-communication">
+     Beyond publication: research dissemination &amp; communication
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-are-we-now">
+   Where are we now?
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#objectives">
+     Objectives 📍
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#roadmap">
+   Roadmap
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Where are we now?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#homework-excercises-and-ressources">
+     Homework, Excercises and ressources
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-materials">
+     Additional materials
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tldr">
+   TlDR
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="communication-and-collaboration">
+<h1>Communication and Collaboration<a class="headerlink" href="#communication-and-collaboration" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://github.com/M-earnest">Michael Ernst</a><br />
+Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fiebach Lab</a>, <a class="reference external" href="https://www.psychologie.uni-frankfurt.de/49868684/Abteilungen">Neurocognitive Psychology</a> at <a class="reference external" href="https://www.goethe-university-frankfurt.de/en?locale=en">Goethe-University Frankfurt</a></p>
+<div class="section" id="beyond-publication-research-dissemination-communication">
+<h2>Beyond publication: research dissemination &amp; communication<a class="headerlink" href="#beyond-publication-research-dissemination-communication" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="where-are-we-now">
+<h1>Where are we now?<a class="headerlink" href="#where-are-we-now" title="Permalink to this headline">¶</a></h1>
+<p>Before we start a lesson it is usually helpful to reflect on what we already know about a certain topic or e.g. what a lesson may possibly try to teach us.</p>
+<p>So please take a few minutes to reflect on the concept of digital literacy with the following questions.</p>
+<p><strong>1.1</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Feel free to do this in your head or in a separate document. Remember, to interactively engage with the material either open it in MyBinder (the small rocket button at the top of the website) or [download the course material](link to course zip), go through the [setup process](link to setup) and open this file (i.e digital_literacy.ipynb in the introduction folder) using Jupyter Notebooks or VScode.</p>
+</div>
+<div class="section" id="objectives">
+<h2>Objectives 📍<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
+<p>In this part of the lecture we will go over the essentials of Communication and Collaboration, both integral parts to the scientific process (and of course also outside of science).
+Specific goals of this first session will be to:</p>
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="section" id="roadmap">
+<h1>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Digital Collaboration</p></li>
+<li><p>Digital Storytelling:</p>
+<ul>
+<li><p>Creating content using Jupyter Books</p></li>
+<li><p>Hosting content using Github and Github pages</p></li>
+</ul>
+</li>
+<li><p>Data visualization</p></li>
+<li><p>Science communication: Publication and Beyond</p></li>
+<li><p>Networks &amp; outreach</p></li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>importance of collaboration in research</p></li>
+<li><p>importance of communication in research</p></li>
+<li><p>avenues of communication/collaboration</p></li>
+<li><p>motivation</p></li>
+<li><p>what to expect</p></li>
+</ul>
+<img align="center" src="https://oreoni.github.io/_images/fig5.png" alt="logo" title="jupyter" width="500" /> 
+<div class="section" id="id1">
+<h2>Where are we now?<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>—- adapt and expand ——</p>
+<p>Please take a moment to reflect on if and how your understanding of the concept of digital literacy has possibly changed following this lecture.</p>
+<p><strong>2.1 How well informed we’re you with regard to the current topic? (i.e.,
+did you know what was expecting you?)</strong></p>
+<p><strong>2.2) What was the most surprising part of the training/lecture for you? What information in particular stood out to you?</strong></p>
+<p><strong>2.3 What was one of the mentioned reasons on why you should care about digital literacy that seemed especially important to you?</strong></p>
+<p><strong>2.4 Could you think of other impacts that a better understanding of digital literacy may have on your life?</strong></p>
+</div>
+<div class="section" id="homework-excercises-and-ressources">
+<h2>Homework, Excercises and ressources<a class="headerlink" href="#homework-excercises-and-ressources" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- find 3 local researchers whoose work could be of interest of you, follow them on osf and researchgate
+
+- request paper access via Reserachate
+
+
+- follow 1 scientist on github
+</pre></div>
+</div>
+</div>
+<div class="section" id="additional-materials">
+<h2>Additional materials<a class="headerlink" href="#additional-materials" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<p>[Figure 1]</p>
+<p>Balazs Aczel, Barnabas Szaszi, Gustav Nilsonne, Olmo R van den Akker, Casper J Albers, Marcel Alm van Assen, Jojanneke A Bastiaansen, Daniel Benjamin, Udo Boehm, Rotem Botvinik-Nezer, Laura F Bringmann, Niko A Busch, Emmanuel Caruyer, Andrea M Cataldo, Nelson Cowan, Andrew Delios, Noah Nn van Dongen, Chris Donkin, Johnny B van Doorn, Anna Dreber, Gilles Dutilh, Gary F Egan, Morton Ann Gernsbacher, Rink Hoekstra, Sabine Hoffmann, Felix Holzmeister, Juergen Huber, Magnus Johannesson, Kai J Jonas, Alexander T Kindel, Michael Kirchler, Yoram K Kunkels, D Stephen Lindsay, Jean-Francois Mangin, Dora Matzke, Marcus R Munafò, Ben R Newell, Brian A Nosek, Russell A Poldrack, Don van Ravenzwaaij, Jörg Rieskamp, Matthew J Salganik, Alexandra Sarafoglou, Tom Schonberg, Martin Schweinsberg, David Shanks, Raphael Silberzahn, Daniel J Simons, Barbara A Spellman, Samuel St-Jean, Jeffrey J Starns, Eric Luis Uhlmann, Jelte Wicherts, and Eric-Jan Wagenmakers. Consensus-based guidance for conducting and reporting multi-analyst studies. Elife, November 2021.</p>
+</div>
+<div class="section" id="tldr">
+<h1>TlDR<a class="headerlink" href="#tldr" title="Permalink to this headline">¶</a></h1>
+<p>–ToDo—-</p>
+<p>Digital Storytelling: Using digital tools and platforms to create and share stories, such as multimedia presentations, digital comics, and other forms of digital storytelling.
+- data visualization, outreach</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="data_management.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Data-mangament</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="excercise_to_git_and_github.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Excercise: Introduction to Git and GitHub</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Michael Ernst, Felix Körber<br/>
+    
+        &copy; Copyright 2023.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
