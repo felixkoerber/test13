@@ -1,27 +1,35 @@
 # Digital Storytelling
     
+Digital storytelling as a broader term involves the use of `technology to convey stories`. There are various mediums to tell these stories, such as `text` on a website or social media platform, `images` and `narration` in a video, or `audio narration` in a podcast.
+
+Digital stories are not simply presentations of facts with accompanying visuals; they are carefully crafted narratives that take the audience on a journey. Like novels or documentaries, digital stories have elements such as `plot, characters, and themes`.
+
+#### Digital Storytelling in Education
+
+With an everincreasing use of digital media, digital storytelling is of high importance in the field of education, to facilitate engagement of scholars by creating dynamic and interactive narratives. The use of multimedia elements like images, videos and narration can lead to a more immersive experience, promoting creativity and critical thinking.
+Furthermore, digital storytelling helps to convey essential skills of digital literacy!
+
+#### Living Documents
+
+Expaning on digital storytelling, there is a growing usage of "living documents" which utilize technology to create `dynamic, constantly evolving narratives`. These living documents are documents that can be `updated in real-time`, with new information and perspectives added as they emerge.
+
+In the realm of science, living documents are becoming increasingly important tools for sharing information and promoting collaboration among researchers. For example, scientists may use living documents to create a `comprehensive database of research studies` on a particular topic, which can be updated in real-time as new studies are published. This can help researchers stay up-to-date on the latest findings and identify areas where further research is needed.
+
+Living documents are also particular relevant in the field of open science, where researchers `share their data and methodologies openly and collaboratively`. Living documents can be used to create a shared repository of data, which can be updated as new data becomes available. This can help promote transparency and collaboration, as researchers can work together to analyze and interpret the data in new and innovative ways.
+
+There are many potential avenues to create living documents.
 
 
-    - add reminder that lab-notebooks stored in github can be easiyl integrated as documentation into jb books
+#### Jupyter Books
 
-https://tlp-lpa.ca/digital-skills/digital-storytelling
+One amazing way to create `living documents` is `Jupyter Book`.
 
-https://en.wikipedia.org/wiki/Living_document
-https://contractbook.com/dictionary/living-document-or-dynamic-document
+Jupyter Books provides a flexible and powerful platform for creating, publishing, and sharing your work. Additionally, Jupyter Book allows you to combine `live code, equations, visualizations, and narrative text` in a single document. This makes it easy to create `engaging, interactive educational content` that helps students understand complex concepts.
 
-e.g.
-
-https://www.uni-bielefeld.de/lehre/living-document/
+Creating content using Jupyter Books is a simple process and we have created a [tutorial on how to use Jupyter Books](https://felixkoerber.github.io/jb/10min.html)!
 
 
-### Jupyter Books
-
-Jupyter Books provides a flexible and powerful platform for creating, publishing, and sharing your work. Creating content using Jupyter Books is a simple process that allows you to combine text, code, and other multimedia elements into a single, interactive document. 
-
-Here's a TL:DR guide on how to create content using Jupyter Books form our [tutorial on how to use Jupyter Books](https://felixkoerber.github.io/jb/10min.html):
-
-
-#### 1. [Make sure you have all the prerequisites installed](https://felixkoerber.github.io/jb/setup.html)
+#### 1. [Installing the prerequisites](https://felixkoerber.github.io/jb/setup.html)
 Before you start setting up your course using Jupyter Book, make sure you have the following tools installed on your machine:
 - **Git**: A version control system that helps you keep track of your code changes.
 - **Jupyter Book**: A tool that helps you build and publish interactive books or documents. You can install Jupyter Book using pip install jupyter-book.
@@ -117,3 +125,6 @@ A workaround for non-technical users is to work with a preconfigured setup. Our 
 
 ```
 
+#### Closing Words
+
+Overall, digital storytelling has become an important tool for educators looking to engage students in meaningful, creative projects. By providing a platform for students to explore and express their ideas in new and innovative ways, digital storytelling can help to promote empathy, understanding, and positive change in the classroom and beyond.
