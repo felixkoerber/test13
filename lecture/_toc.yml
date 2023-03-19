@@ -6,9 +6,6 @@ parts:
   - file: overview
   - file: setup
   - file: introduction/introduction.md
-    sections:
-    - file: introduction/digital_literacy.ipynb
-    - file: introduction/digital_literacy_practical_excercise.ipynb 
   - file: content/media_information_lieracy.ipynb
   - file: content/project_design.ipynb
   - file: content/lit_review.ipynb
@@ -30,13 +27,16 @@ parts:
   - file: content/data_management.ipynb
   - file: content/communcation_collaboration.ipynb
     sections:
+    - file: introduction/digital_literacy.ipynb
+    - file: introduction/digital_literacy_practical_excercise.ipynb 
+   ' sections:
     - file: content/Digital_Collaboration.md
     - file: content/Digital_Storytelling.md
     - file: content/Data_Visualization
     - file: content/Science_communication.md
     - file: content/Networks_outreach.md
     - file: content/python_visualization_for_data.ipynb
-    - file: content/excercise_to_git_and_github.ipynb
+    - file: content/excercise_to_git_and_github.ipynb'
   - file: content/digital_scholarship.ipynb
     sections:
     - file: content/ds_big_data.ipynb
