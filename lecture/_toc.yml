@@ -3,8 +3,9 @@ root: index
 parts:
 - caption: Getting Started
   chapters:
-  - file: content/digital_collaboration.ipybn
-  - file: content/Digital_Storytelling.ipybn
-  - file: content/Data_Visualization.ipybn
-  - file: content/Science_communication.ipybn
-  - file: content/Networks_outreach.ipybn
+  - file: index - Kopie.md
+  - file: digital_collaboration.ipybn
+  - file: Digital_Storytelling.ipybn
+  - file: Data_Visualization.ipybn
+  - file: Science_communication.ipybn
+  - file: Networks_outreach.ipybn
